@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <title>DTA Virtual Space – whitebox preview</title>
+    <link rel="stylesheet" href="../src/app/globals.css?v=20260716-1" />
+    <link rel="stylesheet" href="./preview.css?v=20260716-1" />
+  </head>
+  <body>
+    <main class="virtual-space" data-phase="idle" data-scene="hero" id="app">
+      <a class="skip-link" href="#scene-content">Ugrás a tér tartalmához</a>
+      <div aria-hidden="true" class="space-atmosphere">
+        <div class="space-grid"></div>
+        <div class="space-horizon"></div>
+        <div class="space-vignette"></div>
+      </div>
+      <div id="scene-root"></div>
+      <div aria-hidden="true" class="transition-portal">
+        <div class="transition-portal__core">
+          <span class="transition-portal__motif transition-portal__motif--dentists">
+            <span class="transition-portal__mark">DTA</span>
+            <span class="transition-portal__tooth"></span>
+            <span class="transition-portal__flow"></span>
+            <span class="transition-portal__node transition-portal__node--one"></span>
+            <span class="transition-portal__node transition-portal__node--two"></span>
+            <span class="transition-portal__node transition-portal__node--three"></span>
+          </span>
+          <span class="transition-portal__motif transition-portal__motif--guidance">
+            <span class="transition-portal__reception"></span>
+            <span class="transition-portal__search"></span>
+            <span class="transition-portal__book transition-portal__book--left"></span>
+            <span class="transition-portal__book transition-portal__book--right"></span>
+            <span class="transition-portal__route"></span>
+            <span class="transition-portal__node transition-portal__node--one"></span>
+            <span class="transition-portal__node transition-portal__node--two"></span>
+            <span class="transition-portal__node transition-portal__node--three"></span>
+          </span>
+          <span class="transition-portal__motif transition-portal__motif--technology">
+            <span class="transition-portal__machine"></span>
+            <span class="transition-portal__disc"></span>
+            <span class="transition-portal__tool"></span>
+            <span class="transition-portal__rail"></span>
+            <span class="transition-portal__node transition-portal__node--one"></span>
+            <span class="transition-portal__node transition-portal__node--two"></span>
+            <span class="transition-portal__node transition-portal__node--three"></span>
+          </span>
+        </div>
+      </div>
+      <p aria-live="polite" class="visually-hidden" id="live-region"></p>
+    </main>
+    <script src="./preview.js?v=20260716-1"></script>
+  </body>
+</html>
